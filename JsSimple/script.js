@@ -129,6 +129,11 @@ function writeArray() {
   }
 }
 
+function sortHelper(a, b) {
+    return a - b;
+}
+
+
 
 function UpArrow(){
 
@@ -155,10 +160,10 @@ function RightArrow(){
 
   readRows();
 
-  arr1.sort();
-  arr2.sort();
-  arr3.sort();
-  arr4.sort();
+  arr1.sort(sortHelper);
+  arr2.sort(sortHelper);
+  arr3.sort(sortHelper);
+  arr4.sort(sortHelper);
     
   writeArray();
     
@@ -170,10 +175,10 @@ init();
 
 readRows();
 
- arr1.sort();
- arr2.sort();
- arr3.sort();
- arr4.sort();
+ arr1.sort(sortHelper);
+ arr2.sort(sortHelper);
+ arr3.sort(sortHelper);
+ arr4.sort(sortHelper);
 
  arr1.reverse();
  arr2.reverse();
